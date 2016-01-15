@@ -6,10 +6,16 @@
  - идентификатор резюме (resume_id) - берем из адресной строки, выбрав нужное резюме на сайте
  - токен доступа (access_token) - можно получить здесь [hh-api]
 
-## Установка
-Автоматическое выполнение скрипта можно осуществлять с помощью [cron]
+А также установить следующие пакеты:
 ```sh
-$ (crontab -l; echo "0 */4 * * * /path/to/hh.py >> /path/to/logfile" ) | crontab
+$ pip install requests
+$ pip install logging
+```
+
+## Установка
+Для автоматического выполнения создать таск в [cron]
+```sh
+$ (crontab -l; echo "0 */4 * * * python /path/to/hh.py" ) | crontab
 ```
 [cron]: <http://help.ubuntu.ru/wiki/cron>
 [hh]: <http://hh.ru>
