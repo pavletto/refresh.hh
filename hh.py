@@ -20,3 +20,4 @@ if __name__ == '__main__':
     headers ={'Authorization': 'Bearer '+access_token}
 
     r = requests.post(url, headers=headers)
+    logging.debug('Got response from server: %s', repr(r.text))
