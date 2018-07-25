@@ -51,5 +51,6 @@ def sendRequest():
         sendmessage(
             'Success', 'Your resume was updated')
 
-    if __name__ == '__main__':
-        sendRequest()
+
+if __name__ == '__main__':
+    sendRequest()
