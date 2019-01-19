@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+tempCodeRunnerFile.py
 
 # C extensions
 *.so
@@ -88,3 +89,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# IDE project settings
+.vscode
